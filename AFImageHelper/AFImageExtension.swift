@@ -453,7 +453,7 @@ public extension UIImage {
      
      - Returns UIImage?
      */
-    func roundCornersToCircle(border:CGFloat, color:UIColor) -> UIImage?
+    func roundCornersToCircle(withBorder border:CGFloat, color:UIColor) -> UIImage?
     {
         let shortest = min(size.width, size.height)
         return cropToSquare()?.roundCorners(shortest/2, border: border, color: color)

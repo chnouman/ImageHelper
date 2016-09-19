@@ -65,7 +65,7 @@ class ViewController: UICollectionViewController {
             corners.append(CellItem(text: "Circle", image: image))
         }
         let border = 12 * UIScreen.mainScreen().scale
-        if let image = UIImage(named: "beach")?.roundCornersToCircle(border: border, color: UIColor.lightGrayColor()) {
+        if let image = UIImage(named: "beach")?.roundCornersToCircle(withBorder: border, color: UIColor.lightGrayColor()) {
             corners.append(CellItem(text: "Circle + Border", image: image))
         }
         if let image = UIImage(named: "beach")?.roundCorners(12) {
